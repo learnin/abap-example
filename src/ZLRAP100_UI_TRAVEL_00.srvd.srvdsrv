@@ -1,0 +1,12 @@
+@EndUserText: {
+  label: 'Service Definition for ZLRAP100_C_TRAVELTP_00'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZLRAP100_C_TRAVELTP_00'
+  }
+}
+define service ZLRAP100_UI_TRAVEL_00 provider contracts odata_v4_ui {
+  expose ZLRAP100_C_TRAVELTP_00 as Travel;
+}
+
