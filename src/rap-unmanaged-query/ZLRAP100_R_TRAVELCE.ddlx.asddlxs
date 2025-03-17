@@ -1,0 +1,31 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo.title.type: #STANDARD
+//@UI.headerInfo.title.value: 'TravelId'
+@UI.headerInfo.description.type: #STANDARD
+//@UI.headerInfo.description.value: 'TravelId' //case-sensitive
+@UI.headerInfo.typeName: 'Travel'
+@UI.headerInfo.typeNamePlural: 'Travels'
+//@UI.headerInfo.imageUrl: 'Attachment'  //case-sensitive
+annotate entity ZLRAP100_R_TRAVELCE with
+{
+  @UI.lineItem  : [ {
+        position  : 10
+      } ]
+  travel_id;
+
+  @UI.selectionField: [ {
+    position      : 10
+    } ]
+  @UI.lineItem  : [ {
+  position      : 20
+  } ]
+  @Consumption.filter.mandatory: true
+  travel_status;
+  
+  @UI.selectionField: [ {
+    position      : 20
+    } ]
+  //year_month;
+  posting_date;
+}
+

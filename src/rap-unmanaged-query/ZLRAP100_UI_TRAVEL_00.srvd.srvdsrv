@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZLRAP100_UI_TRAVEL_00'
+define service ZLRAP100_UI_TRAVEL_00
+  provider contracts odata_v4_ui {
+  expose ZLRAP100_R_TRAVELCE as Travel;
+}
+
